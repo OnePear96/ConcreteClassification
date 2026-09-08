@@ -1,0 +1,20 @@
+{
+  "model_name": "resnet18",
+  "threshold": 0.5,
+  "seed": 42,
+  "settings": {
+    "head_max_epochs": 10,
+    "head_min_epochs": 3,
+    "head_patience": 3,
+    "finetune_max_epochs": 20,
+    "finetune_min_epochs": 6,
+    "finetune_patience": 5,
+    "min_delta": 0.001
+  },
+  "batch_size": 64,
+  "num_workers": 4,
+  "selected_stage": "fine_tune",
+  "selected_epoch": 8,
+  "validation_macro_f1": 0.9909255422381914,
+  "training_seconds": 2969.5788120999932
+}

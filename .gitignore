@@ -1,0 +1,6 @@
+/output/*
+!/output/README.md
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.py[cod]

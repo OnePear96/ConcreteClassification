@@ -1,0 +1,23 @@
+{
+  "id": "seeded-visual-slices-v2",
+  "seed": 42,
+  "threshold": 0.5,
+  "batch_size": 64,
+  "small_cnn": {
+    "max_epochs": 40,
+    "min_epochs": 10,
+    "patience": 6,
+    "min_delta": 0.001
+  },
+  "resnet18": {
+    "head_max_epochs": 10,
+    "head_min_epochs": 3,
+    "head_patience": 3,
+    "finetune_max_epochs": 20,
+    "finetune_min_epochs": 6,
+    "finetune_patience": 5,
+    "min_delta": 0.001
+  },
+  "notes": "Image size is fixed at 224 in data.py. Architecture, optimizer and learning rates are explicit in models.py and train.py. All initially uncertain slices are excluded.",
+  "num_workers": 4
+}

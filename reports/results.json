@@ -1,0 +1,99 @@
+{
+  "seed": 42,
+  "threshold": 0.5,
+  "split_sizes": {
+    "train": 2512,
+    "validation": 346,
+    "test": 732
+  },
+  "models": {
+    "resnet18": {
+      "metrics": {
+        "threshold": 0.5,
+        "accuracy": 0.9603825136612022,
+        "macro_f1": 0.957922278714358,
+        "roc_auc": 0.9872724286786788,
+        "pr_auc_crack": 0.9914558615764522,
+        "corrosion_precision": 0.9850187265917603,
+        "corrosion_recall": 0.9131944444444444,
+        "corrosion_f1": 0.9477477477477477,
+        "corrosion_support": 288,
+        "crack_precision": 0.946236559139785,
+        "crack_recall": 0.990990990990991,
+        "crack_f1": 0.9680968096809681,
+        "crack_support": 444
+      },
+      "confusion_matrix": [
+        [
+          263,
+          25
+        ],
+        [
+          4,
+          440
+        ]
+      ]
+    },
+    "small_cnn": {
+      "metrics": {
+        "threshold": 0.5,
+        "accuracy": 0.9057377049180327,
+        "macro_f1": 0.8982151169937709,
+        "roc_auc": 0.9562140265265264,
+        "pr_auc_crack": 0.9575393520191664,
+        "corrosion_precision": 0.9469387755102041,
+        "corrosion_recall": 0.8055555555555556,
+        "corrosion_f1": 0.8705440900562852,
+        "corrosion_support": 288,
+        "crack_precision": 0.8850102669404517,
+        "crack_recall": 0.9707207207207207,
+        "crack_f1": 0.9258861439312567,
+        "crack_support": 444
+      },
+      "confusion_matrix": [
+        [
+          232,
+          56
+        ],
+        [
+          13,
+          431
+        ]
+      ]
+    },
+    "lightgbm": {
+      "metrics": {
+        "threshold": 0.5,
+        "accuracy": 0.9098360655737705,
+        "macro_f1": 0.904822695035461,
+        "roc_auc": 0.9737159034034034,
+        "pr_auc_crack": 0.9833456255861066,
+        "corrosion_precision": 0.9021739130434783,
+        "corrosion_recall": 0.8645833333333334,
+        "corrosion_f1": 0.8829787234042553,
+        "corrosion_support": 288,
+        "crack_precision": 0.9144736842105263,
+        "crack_recall": 0.9391891891891891,
+        "crack_f1": 0.9266666666666666,
+        "crack_support": 444
+      },
+      "confusion_matrix": [
+        [
+          249,
+          39
+        ],
+        [
+          27,
+          417
+        ]
+      ]
+    }
+  },
+  "sha256": {
+    "support\\split_manifest.csv": "291908bfbeda984920022b2c2982e45c0a82afd4d97be78a8f8323dfa72765a7",
+    "support\\slice_review.csv": "46cf6341f4883899f9db90493eebf77546c3f13430a020ff05327c381eb0a2fa",
+    "models\\resnet18.pt": "b34f8338ee38c0cff5e6daa858cf39438fd8810b232069661a5f121915c7b36a",
+    "models\\small_cnn.pt": "ea614447e5dea6593cdc3bb7b070aa1cb0dff7508d63b5c2435a54cf95f7e0b3",
+    "models\\lightgbm.txt": "593c2324010e016345ce935b4ff7c903f983f6e1d6cc9541db8e3a6923c20b6e"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "model_name": "small_cnn",
+  "threshold": 0.5,
+  "seed": 42,
+  "settings": {
+    "max_epochs": 40,
+    "min_epochs": 10,
+    "patience": 6,
+    "min_delta": 0.001
+  },
+  "batch_size": 64,
+  "num_workers": 4,
+  "selected_epoch": 10,
+  "validation_macro_f1": 0.9508609976921711,
+  "training_seconds": 2025.0232970999787
+}

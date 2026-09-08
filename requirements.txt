@@ -1,0 +1,12 @@
+Pillow>=10.0
+matplotlib>=3.8
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+torch>=2.3
+torchvision>=0.18
+jupyterlab>=4.2
+pytest>=8.2
+lightgbm>=4.0
+scipy>=1.11
+joblib>=1.3
