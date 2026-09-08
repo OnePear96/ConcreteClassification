@@ -1,6 +1,6 @@
 # Concrete damage classification
 
-Classify a supplied concrete crop as **corrosion (0)** or **crack (1)**. The EDF exercise covers data preparation, model training, evaluation and explanation. This dataset contains damage crops, with no healthy-surface class.
+Classify a supplied concrete crop as **corrosion (0)** or **crack (1)**. The exercise covers data preparation, model training, evaluation and explanation. This dataset contains damage crops, with no healthy-surface class.
 
 ## Run the project
 
@@ -42,7 +42,7 @@ These are internal results: the test material has appeared in earlier work.
 
 ## Why ResNet-18?
 
-We explored saturation, exposure and brightness normalization during data augmentation, an additional mask channel during training, edge-extraction operators and YOLO. These approaches did not clearly outperform ResNet-18, so we kept it as the final model.
+We explored saturation, exposure and brightness normalization during data augmentation, an additional mask channel during training, edge-extraction operators and YOLO. These approaches did not clearly outperform ResNet-18. Given the relatively simple crop-level classification task and the limited dataset, we retained ResNet-18 to avoid unnecessary model complexity and reduce the risk of overfitting.
 
 ## ResNet-18 error examples
 
